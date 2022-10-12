@@ -1,13 +1,45 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import ProductListPage from "./pages/ProductListPage";
+import OrderDetail from "./pages/OrderDetail";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
+import Reset from "./pages/Reset";
+import reportWebVitals from "./reportWebVitals";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  BrowserRouter,
+  Routes,
+} from "react-router-dom";
+import SetPass from "./pages/SetPass";
+import MultiStep from "./pages/MultiStep";
+import Cart from './pages/Cart'
+import Order from "./pages/Order";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />}></Route>
+        <Route path="/product-list" element={<ProductListPage />}></Route>
+        <Route path="/order-detail" element={<OrderDetail />}></Route>
+        <Route path="/signin" element={<SignIn />}></Route>
+        <Route path="/signup" element={<SignUp />}></Route>
+        <Route path="/forget" element={<Reset />}></Route>
+        <Route path="/cart" element={<Cart />}></Route>
+
+        <Route path="/setpass" element={<SetPass />}></Route>
+        <Route path="/order" element={<Order />}></Route>
+        <Route path="/step" element={<MultiStep />}></Route>
+
+
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
