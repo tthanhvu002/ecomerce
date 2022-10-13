@@ -1,3 +1,10 @@
+import pd1 from '../../img/pd1.png'
+import pd2 from '../../img/pd2.png'
+import pd3 from '../../img/pd3.png'
+import pd4 from '../../img/pd4.png'
+import cart from '../../img/cart.svg'
+import {BsChevronLeft, BsChevronRight} from 'react-icons/bs'
+
 function Suggest() {
   return (
     <div class="suggest">
@@ -5,17 +12,17 @@ function Suggest() {
         <h2>Products you may like</h2>
         <div class="btn-wrap">
           <div class="prev-btn">
-            <i class="fa-solid fa-chevron-left"></i>
+          <BsChevronLeft></BsChevronLeft>
           </div>
           <div class="next-btn">
-            <i class="fa-solid fa-chevron-right"></i>
+          <BsChevronRight></BsChevronRight>
           </div>
         </div>
       </div>
       <div class="product-list row container">
         <div class="col-lg-3">
           <div class="item">
-            <img src="./img/pd1.png" alt="" />
+            <img src={pd1} alt="" />
             <p>Ice Cream Sundae</p>
             <p>$20</p>
             <div class="d-flex justify-content-between align-items-center">
@@ -24,13 +31,13 @@ function Suggest() {
                 <input type="text" placeholder="1" />
                 <div class="increase">+</div>
               </div>
-              <img src="./img/cart.svg" alt="" />
+              <img src={cart} alt="" />
             </div>
           </div>
         </div>
         <div class="col-lg-3">
           <div class="item">
-            <img src="./img/pd2.png" alt="" />
+            <img src={pd2} alt="" />
             <p>Ice Cream Sundae</p>
             <p>$20</p>
             <div class="d-flex justify-content-between align-items-center">
@@ -39,13 +46,13 @@ function Suggest() {
                 <input type="text" placeholder="1" />
                 <div class="increase">+</div>
               </div>
-              <img src="./img/cart.svg" alt="" />
+              <img src={cart} alt="" />
             </div>
           </div>
         </div>
         <div class="col-lg-3">
           <div class="item">
-            <img src="./img/pd3.png" alt="" />
+            <img src={pd3} alt="" />
             <p>Ice Cream Sundae</p>
             <p>$20</p>
             <div class="d-flex justify-content-between align-items-center">
@@ -54,13 +61,13 @@ function Suggest() {
                 <input type="text" placeholder="1" />
                 <div class="increase">+</div>
               </div>
-              <img src="./img/cart.svg" alt="" />
+              <img src={cart} alt="" />
             </div>
           </div>
         </div>
         <div class="col-lg-3">
           <div class="item">
-            <img src="./img/pd4.png" alt="" />
+            <img src={pd4} alt="" />
             <p>Ice Cream Sundae</p>
             <p>$20</p>
             <div class="d-flex justify-content-between align-items-center">
@@ -69,7 +76,7 @@ function Suggest() {
                 <input type="text" placeholder="1" />
                 <div class="increase">+</div>
               </div>
-              <img src="./img/cart.svg" alt="" />
+              <img src={cart} alt="" />
             </div>
           </div>
         </div>

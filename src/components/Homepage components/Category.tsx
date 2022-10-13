@@ -12,7 +12,7 @@ function Category() {
       <div className="list row g-4">
         <div className="col-lg-2">
           <div className="item">
-            <imge src={beve} alt="" />
+            <img src={beve} alt="" />
             <p>beverage</p>
           </div>
         </div>

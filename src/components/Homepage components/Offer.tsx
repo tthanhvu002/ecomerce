@@ -2,6 +2,8 @@ import of1 from '../../img/of1.png'
 import of2 from '../../img/of2.png'
 import of3 from '../../img/of3.png'
 import of4 from '../../img/of4.png'
+import {BsChevronLeft, BsChevronRight} from 'react-icons/bs'
+
 
 
 function Offer() {
@@ -11,10 +13,10 @@ function Offer() {
         <h2>Offers</h2>
         <div className="btn-wrap">
           <div className="prev-btn">
-            <i className="fa-solid fa-chevron-left"></i>
+          <BsChevronLeft></BsChevronLeft>
           </div>
           <div className="next-btn">
-            <i className="fa-solid fa-chevron-right"></i>
+          <BsChevronRight></BsChevronRight>
           </div>
         </div>
       </div>

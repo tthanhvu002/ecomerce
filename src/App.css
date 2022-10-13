@@ -593,7 +593,9 @@ p {
   margin: 0 auto;
   margin-top: 110px;
 }
-
+.checkout-btn a{
+  color: #fff;
+}
 .order-detail .detail {
   display: flex;
   margin-bottom: 196px;

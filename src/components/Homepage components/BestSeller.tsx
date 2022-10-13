@@ -3,6 +3,8 @@ import pd2 from '../../img/pd2.png'
 import pd3 from '../../img/pd3.png'
 import pd4 from '../../img/pd4.png'
 import cart from '../../img/cart.svg'
+import {BsChevronLeft, BsChevronRight} from 'react-icons/bs'
+
 
 
 function BestSeller() {
@@ -12,14 +14,14 @@ function BestSeller() {
           <h2>Best Selling Products</h2>
           <div className="btn-wrap">
             <div className="prev-btn">
-              <i className="fa-solid fa-chevron-left"></i>
+            <BsChevronLeft></BsChevronLeft>
             </div>
             <div className="next-btn">
-              <i className="fa-solid fa-chevron-right"></i>
+            <BsChevronRight></BsChevronRight>
             </div>
           </div>
         </div>
-        <div className="product-list row container">
+        <div className="product-list row container" style={{margin: '0 auto'}}>
           <div className="col-lg-3">
             <div className="item">
               <img src={pd1} alt="" />
@@ -31,7 +33,7 @@ function BestSeller() {
                   <input type="text" placeholder="1" />
                   <div className="increase">+</div>
                 </div>
-                <img src="./img/cart.svg" alt="" />
+                <img src={cart} alt="" />
               </div>
             </div>
           </div>
